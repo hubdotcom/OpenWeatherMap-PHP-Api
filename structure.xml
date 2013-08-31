@@ -1,0 +1,1422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project title="OpenWeatherMap PHP API" version="2.0.1&#10;">
+  <file path="cmfcmf/OpenWeatherMap/Util/Unit.php" generated-path="cmfcmf.OpenWeatherMap.Util.Unit.html" hash="1449f89d77d7b56b9a284069f0390530" package="Default">
+    <docblock line="0">
+      <description>OpenWeatherMap-PHP-API — An php api to parse weather data from http://www.OpenWeatherMap.org .</description>
+      <long-description></long-description>
+      <tag name="license" description="MIT&#10;Please see the LICENSE file distributed with this source code for further&#10;information regarding copyright and licensing.&#10;Please visit the following links to read about the usage policies and the license of OpenWeatherMap before using this class." line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="cmfcmf\OpenWeatherMap\Util" line="22" package="Default">
+      <extends/>
+      <name>Unit</name>
+      <full_name>\cmfcmf\OpenWeatherMap\Util\Unit</full_name>
+      <docblock line="22">
+        <description>The unit class representing a unit object.</description>
+        <long-description></long-description>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="cmfcmf\OpenWeatherMap\Util" line="68" package="Default">
+        <name>__toString</name>
+        <full_name>\cmfcmf\OpenWeatherMap\Util\Unit::__toString()</full_name>
+        <docblock line="68">
+          <description>Get the value as formatted string with unit.</description>
+          <long-description></long-description>
+          <tag name="return" description="The value as formatted string with unit." line="68" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="note" description="The unit is not included if it is empty." line="68"/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="cmfcmf\OpenWeatherMap\Util" line="80" package="Default">
+        <name>getUnit</name>
+        <full_name>\cmfcmf\OpenWeatherMap\Util\Unit::getUnit()</full_name>
+        <docblock line="80">
+          <description>Get the value's unit.</description>
+          <long-description></long-description>
+          <tag name="return" description="The value&amp;#039;s unit." line="80" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="note" description="This also converts &amp;#039;celsius&amp;#039; to &amp;#039;°C&amp;#039; and &amp;#039;fahrenheit&amp;#039; to &amp;#039;F&amp;#039;." line="80"/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="cmfcmf\OpenWeatherMap\Util" line="97" package="Default">
+        <name>getValue</name>
+        <full_name>\cmfcmf\OpenWeatherMap\Util\Unit::getValue()</full_name>
+        <docblock line="97">
+          <description>Get the value.</description>
+          <long-description></long-description>
+          <tag name="return" description="The value." line="97" type="float">
+            <type>float</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="cmfcmf\OpenWeatherMap\Util" line="107" package="Default">
+        <name>getDescription</name>
+        <full_name>\cmfcmf\OpenWeatherMap\Util\Unit::getDescription()</full_name>
+        <docblock line="107">
+          <description>Get the value's description.</description>
+          <long-description></long-description>
+          <tag name="return" description="The value&amp;#039;s description." line="107" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="cmfcmf\OpenWeatherMap\Util" line="119" package="Default">
+        <name>getFormatted</name>
+        <full_name>\cmfcmf\OpenWeatherMap\Util\Unit::getFormatted()</full_name>
+        <docblock line="119">
+          <description>Get the value as formatted string with unit.</description>
+          <long-description></long-description>
+          <tag name="return" description="The value as formatted string with unit." line="119" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="note" description="The unit is not included if it is empty." line="119"/>
+        </docblock>
+      </method>
+    </class>
+    <source>eJzlVVFu00AQ/c8phqhSkqq1+w0UqEoLlYBGags/laqNPY6XOrvW7jqhqiJxCA7CGTgKJ2F2vUnsxG7Sbywk1M2bNzNv3s6+fpuneSfc3+/APlzmKL4hMymqzyw/HH4cHp4ML+Dvz19wIoCAwHIORkLOlEaYlVCImWGQKDmB1Jj8ZRjOZrOgzhVINYaActg07zIeoSCCzxfX/miYIaMDjQgUAZ8uTs++XJ1BwjOEmGuj+KgwGMOMm5QQXIOWhYoQIhkjJFJBUiiby5JxQQcTZrgUoHDMVMzFmJD5g+Lj1AATMZQl0HlQr2DKNTeuhkRmmZzZyIyLe23bVshiYCNZlIhCszFCLomLo3a09njRnUzWBIURUmE2zrK6LqKMaR04UWzvT+q3Gyp09e2IXWqyjpeE9eOdLHjznMeECzsdwSaoc2blnyT077ZOfXtjePaqs3DVtZVKkKquWRIxV6hRGCsCK3+Ro+8YmcCxl6gbOu48doA+R2M/KnHKaNKZZMaxTllWYOB/XGK4MKgEy/xB6P7PFZ8yg7DnYqi4JmbrMypqSd3TrrxnZrAhuyeIUUeK59asz8xTidxMd0peJRADgbM1jes56CqzidfUq7Op7QLm63ctruZKRjfbIirFusDq303xWzQoRnTL6M6LyDHc3UVSUKoiMn3fwzEcBUcHvtRj6HYP6kXYo4EjK11mvz17Jw/fLAj6TpXBwjJrKE/cLzsc+LGvgeoZl9ja6Cx8vjHAD2hWqgDTUO40uwS9pm4XNvpToSmU2HDbM1mENLgaMi0rOqDdGmVFTOE8gfIUJ7l5CLaMx8grl66/Lrkv1cs1RnO+KLA/2EmatjvaokEb3DdL/bBMS3osxBSV0dCLMNO80D27/3t/fp/23J7vJSxVKFLkpvzlvPe0BNSZXWkb/YehW3WUlh4GEpdsTM8dbccALkX2AD69S7rK6dB2HGw0UjjldNXjoCw/SjG6p4fzB71IJmWLTumjifVr3j1edTeolFQZi2t4Zeo5EBwbiSp6tHGdbzI1AivUlYBdvNBmgpYXo3VSXy1qi1UrS2G7Q59a8u1GbYhqLfn9Crul8P9s99RXypoyFScvLyi8cE9Dsze7jyu4d8kcHtcp5t3dnN7E1t30PA3oH/Ucc94=</source>
+  </file>
+  <file path="cmfcmf/OpenWeatherMap/WeatherForecast.php" generated-path="cmfcmf.OpenWeatherMap.WeatherForecast.html" hash="3f96044a75c7540b68bbe925cde91ce3" package="Default">
+    <docblock line="0">
+      <description>OpenWeatherMap-PHP-API — An php api to parse weather data from http://www.OpenWeatherMap.org .</description>
+      <long-description></long-description>
+      <tag name="license" description="MIT&#10;Please see the LICENSE file distributed with this source code for further&#10;information regarding copyright and licensing.&#10;Please visit the following links to read about the usage policies and the license of OpenWeatherMap before using this class." line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="cmfcmf\OpenWeatherMap" line="28" package="Default">
+      <extends>\cmfcmf\OpenWeatherMap\Weather</extends>
+      <name>WeatherForecast</name>
+      <full_name>\cmfcmf\OpenWeatherMap\WeatherForecast</full_name>
+      <docblock line="28">
+        <description>Weather class returned by {@link OpenWeatherMap::getWeather()}.</description>
+        <long-description></long-description>
+      </docblock>
+      <property static="false" visibility="public" line="35" namespace="cmfcmf\OpenWeatherMap" package="Default">
+        <name>$time</name>
+        <default></default>
+        <docblock line="35">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;The time of the forecast.&lt;/p&gt;" line="35" type="\cmfcmf\OpenWeatherMap\Util\Time" variable="">
+            <type>\cmfcmf\OpenWeatherMap\Util\Time</type>
+          </tag>
+          <tag name="see" description="The time object." line="35"/>
+        </docblock>
+      </property>
+    </class>
+    <source>eJyVVl1uGzcQft9TzIOBlR1ZAvpYN20Dx0ENxI0B22gBqQioXUpizCUJ/lgWggA9RA/SM+QoPUlnyN3VSlpZyUKQVjPffJw/DvnTL2ZpsvHZWQZn8MFw9QdnfsntDTPnt7/dnr+5vYb//v4H3ihAIDAjwGswzDoOqwSFknkGc6srWHpvfhyPV6vVaJtrpO0CRrgGLfOrFAVXSHBzfV+LbiVnKHCcA1rA++vLq9/vrmAuJIdSOG/FLHhewkr4JSKEA6eDLTgUuuQw1xbmwdJaRCYUCirmhVZg+YLZUqgFIs3aisXSA1MlJBdQPtr24Ek44aMPcy2lXpGlFOrRUdiWsxLYTIeECI4tOBiNXIK7SEviJjo930kozDg6RnbEGqMoJHNuFJNCsb+Yv29DjaN/34htc7KL14ity1s1vMaIEnHjLFOs4s4wSn81x890m/oiy4I7oBtmgE+vavrghZxeCr8+CroL6ijmnleGW+aD5UexD0r4o6D6PzAH9euH2afjVkKVx30VFcesxW5oyN9hqxTMeeDPnqvS7TRT4072OZLHHUwP1vGJWSBGuMdu9PSCrZhaOlGOamhrQZU/4l6HbPaJFy3HOP6aMMO2hxOfAtnx6BI3jufAQPFVOzUSTdq7tV9u1HqEE4ZVML0TlZH8z5v3V5JXXHk4ea4kIu470ThA2a4ljQzcZCcBK+sQ7iC9YWOWh7CS4Tcx00ugvd1Ft0ZCeW4Vk30JmAdVxLnz8WOhFRKHwg/I52HjymvIBTWmYDIf1muijKv8NBKlctJzQhPi/OcCNwQiKHW0NyJbkk5yUeZ/DaEroa25LcNvrW05yaVWhzTM72uC8nZ9etG6076IOQyaYNDzimP6ivy043nyfrP/aHtRkF//vcw3hF+ASxwTx83edY2yTX6iux38JH9iMmD4aDTo0VbsGXWv+gwrgbk5hTH8cJHtFqADrOvQGS0D+k+O9i1YuzPci+p0CC/ZRW++34rC67Hq1LCOaBkqUW7aqkPYaLq+7yio8pirPVJjuXObHHVIG80e6UbRkras4zFuRTwh8fOII5RGGIMlKx6HeIwWjA6YeAbHPmS4bCVcPFeFigqaE6UuAk2N0ff2Lh775Z3hvGxasBq7o527b2Tcgc5NGSODOlt0Suy2Uss3iUyUta0lmix2cGn37/cJQd4KHJc0m/bKsKOlK9VBZb3CfvkLqUPp9ouf5JOcSdmZMbUwlX1XWrvX22KFMMKnq11fn23UnShVkLLTcl2MX5velVxo+PGqEQszfYtHGB2Eg+6YRNwkt8Jtsv4CznHfm7rmRKxbob1b1AxuXc20xNSHasbtJl2tfGvkN1K8BPQFhjcM/2BKOo5f9/pLgBABfYXY2ki44XjK/SSn6z8FtzfO0wile0M9O5ulGpvkOJZCb6104HR4ga5k622GLH1/yf4HzIAbUA==</source>
+  </file>
+  <file path="cmfcmf/OpenWeatherMap/Util/Wind.php" generated-path="cmfcmf.OpenWeatherMap.Util.Wind.html" hash="22209af96f7054dd47530b6cc3febab3" package="Default">
+    <docblock line="0">
+      <description>OpenWeatherMap-PHP-API — An php api to parse weather data from http://www.OpenWeatherMap.org .</description>
+      <long-description></long-description>
+      <tag name="license" description="MIT&#10;Please see the LICENSE file distributed with this source code for further&#10;information regarding copyright and licensing.&#10;Please visit the following links to read about the usage policies and the license of OpenWeatherMap before using this class." line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="cmfcmf\OpenWeatherMap\Util" line="24" package="Default">
+      <extends/>
+      <name>Wind</name>
+      <full_name>\cmfcmf\OpenWeatherMap\Util\Wind</full_name>
+      <docblock line="24">
+        <description>The wind class representing a wind object.</description>
+        <long-description></long-description>
+      </docblock>
+      <property static="false" visibility="public" line="29" namespace="cmfcmf\OpenWeatherMap\Util" package="Default">
+        <name>$speed</name>
+        <default></default>
+        <docblock line="29">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;The wind speed.&lt;/p&gt;" line="29" type="\cmfcmf\OpenWeatherMap\Util\Unit" variable="">
+            <type>\cmfcmf\OpenWeatherMap\Util\Unit</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="34" namespace="cmfcmf\OpenWeatherMap\Util" package="Default">
+        <name>$direction</name>
+        <default></default>
+        <docblock line="34">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;The wind direction.&lt;/p&gt;" line="34" type="\cmfcmf\OpenWeatherMap\Util\Unit" variable="">
+            <type>\cmfcmf\OpenWeatherMap\Util\Unit</type>
+          </tag>
+        </docblock>
+      </property>
+    </class>
+    <source>eJyNU8Fu1DAQvecr5tADrNjkDhSoqkqsRGElWvWyUjWJJ4khsS3baYRQJT6CL+RLGNvblIR2WytSpPGbN+8922/fm9ZkxWqVwQq+GFJXhL4le45mvf24XZ9sN/Dn1284UcBAQCPBazBoHcGYoCDQI9RW99B6b14XxTiO+Zwr17aBnGeEMR86WZFigvPNxb607Qi54IiAO+DT5vTs89czqGVHIKTzVpaDJwGj9C0jpAOnB1sRVFoQ1NpCPdgwK5BJxYUevdQKLDVohVQNI80PK5vWAyoBSQLX87mCG+mkjxpq3XV6DJ2dVN9dsG0JBWCph4QYHDYERjOXJBdpQ/nOna4XgUJJLCz0BdboourQuTyGErwfzO95qCLqeyZ2ymSJ14zdH29/x2uMFIwrskxhT85giL+v+dvNqXeXXnZvsmxwhwC7SyU9o/Z374KT47RFioSjNpYcKR+iwrSjy29U+TxqSKgrLmc/M+AVacJiIzdoIbDfkzpDJPI9oIh/M5R8UnAUt1jH0yRCWp7Pt+phomn7f7JTvjme2IeiceElAqah/LCwT2OTsEcszJHT5ANap0apPFmF3UMe6kElnuvrSit+dkPlX/yj5tVy4MvYnU4grKNwq9fvkvTjKdzF9r3e41lsAXKb3WZ/AbRCdMI=</source>
+  </file>
+  <file path="Examples_Forecast.php" generated-path="Examples_Forecast.html" hash="126d1a4df4da36b409140bdcea40414d" package="Default">
+    <docblock line="0">
+      <description>OpenWeatherMap-PHP-API — An php api to parse weather data from http://www.OpenWeatherMap.org .</description>
+      <long-description></long-description>
+      <tag name="license" description="MIT&#10;Please see the LICENSE file distributed with this source code for further&#10;information regarding copyright and licensing.&#10;Please visit the following links to read about the usage policies and the license of OpenWeatherMap before using this class." line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+    </docblock>
+    <source>eJzNVOFO40YQ/u+nmEZITtDZhuNfgLSUpgUJSqS7093pqNDGnsRb7F3f7hoTVUj3EPeEfZLO7toGzNHjT6UmkZLMfvPN7Dff+ODHKq+CZHs7gG24qFC8R2ZyVOesihYni+hocQp/f/kKRwIICKziYCRUTGmExkMhY4bBSskScmOqaZI0TRM/5oqlWkNMNWyZnwqeoiCC89O3bWhRIKOARgTKgLPT4/nvb+aw4gVCxrVRfFkbzKDhJicE16BlrVKEVGYIK6lgVStby5JxQYGSGS4FKFwzlXGxJmS1UXydG2AiA98CxePHHdxwzY3rYSWLQjY2s+DiWttrK2QZsKWsPaLWbI1QSeLiqB2tDXe3k6uBoLBEaszmWVZ3i7RgWsdOFHv3f9XvZajE9fdCbK/JEC8J24637HirimeES4Kgptul5Yo+l49J958/upzfpli5mTANF+/P+//7QaDwc80VjkOfmgxaJeeFE4IlCZwxsa6t7KSu893YqA1syAwgGwFFd0yZ+MNkGmzZCBxCmGHoGd4JbjSMUyZoHhCWSOZKQyALhbysUHFWhPApwxWrC/OHpahdxmGP9Ty/oRnOVy7/xNTE8IsUoQEnBUtzO+yxYdcIDAopr8mf5KX5LSurAq+OCYH2htZgbgKyAbJgI9W1nsTBlmxKqi2wGVQbt4q0RLA7dS1Zh6VMux/OjgJvDezukFob7YI/oyJHE3MPPQRbJZqt0bT8v7ZH49Cjw1fgZaBvq+grCCm0u0M9YJpLGM0/HJ0vzuawe5ArSGaXwr5H1KE/PuZmM4URxNBXjWYpBaOZYCV2LAdLnzzqAmcEfFfRoPFJdtEfRTO/7+Mwi8v4I5xMeTh5lvJBILBspP/4Xgry5lZr/An8FQC9rMYE6uP0JBGGcUEb31m9k6tVrzUCNDmnPFpzVpRS+4eGpuvaKvZ3m/04K+6Kvh1aJmxHra+Oa6VQGLcYnW8sIbthvGBLcoN0q6U9mb94V+b+rsZr2t4rmhlekphklIGi4YRgI/+I/1aGPbhPcfK7BOrMwp/gjRyg9x+0+WA+ffABAdodZaZW+L2kURRFo2dAdy9fnb3/YnP2nizO6+HivMib//vJWrTX/bvz/DbUTrGP3gX/ABAOzVw=</source>
+  </file>
+  <file path="Examples_Current.php" generated-path="Examples_Current.html" hash="caeead551355698f4cf8185d01b7bcf6" package="Default">
+    <docblock line="0">
+      <description>OpenWeatherMap-PHP-API — An php api to parse weather data from http://www.OpenWeatherMap.org .</description>
+      <long-description></long-description>
+      <tag name="license" description="MIT&#10;Please see the LICENSE file distributed with this source code for further&#10;information regarding copyright and licensing.&#10;Please visit the following links to read about the usage policies and the license of OpenWeatherMap before using this class." line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+    </docblock>
+    <source>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</source>
+  </file>
+  <file path="cmfcmf/OpenWeatherMap/Util/Sun.php" generated-path="cmfcmf.OpenWeatherMap.Util.Sun.html" hash="5895916338ed8eb2bc220098b85272d7" package="Default">
+    <docblock line="0">
+      <description>OpenWeatherMap-PHP-API — An php api to parse weather data from http://www.OpenWeatherMap.org .</description>
+      <long-description></long-description>
+      <tag name="license" description="MIT&#10;Please see the LICENSE file distributed with this source code for further&#10;information regarding copyright and licensing.&#10;Please visit the following links to read about the usage policies and the license of OpenWeatherMap before using this class." line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="cmfcmf\OpenWeatherMap\Util" line="22" package="Default">
+      <extends/>
+      <name>Sun</name>
+      <full_name>\cmfcmf\OpenWeatherMap\Util\Sun</full_name>
+      <docblock line="22">
+        <description>The sun class representing a sun object.</description>
+        <long-description></long-description>
+      </docblock>
+      <property static="false" visibility="public" line="27" namespace="cmfcmf\OpenWeatherMap\Util" package="Default">
+        <name>$rise</name>
+        <default></default>
+        <docblock line="27">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;The time of the sun rise.&lt;/p&gt;" line="27" type="\DateTime" variable="">
+            <type>\DateTime</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="32" namespace="cmfcmf\OpenWeatherMap\Util" package="Default">
+        <name>$set</name>
+        <default></default>
+        <docblock line="32">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;The time of the sun set.&lt;/p&gt;" line="32" type="\DateTime" variable="">
+            <type>\DateTime</type>
+          </tag>
+        </docblock>
+      </property>
+    </class>
+    <source>eJyVU8Fu1DAQvecr5tADrNjkDhSoSiVWorBSF/WyUjVJJokhsS173AihSnwEX8iXMHayK3ZpoVgrbTR+8+a9Z/vla9vZrFgsMljAR0v6mpA7cpdol+t36+XZegU/v/+AMw0CBLQK2IBF5wnGCQo1MkLjzAAds31eFOM45odcuXEt5DIjjnnTq4q0EFyuNnNp3RNKwROBdMD71fnFh6sLaFRPUCvPTpWBqYZRcScI5cGb4CqCytQEjXHQBBdnRTKlpTAgK6PBUYuuVroVpP3qVNsxoK5hkiD1/FDBrfKKk4bG9L0ZY2ev9BcfbTvCGrA0YUIEjy2BNcKlyCfaWN65M81RoFCSCIt9kTW5qHr0Pk+hRO9/ze9xqCLpeyR2n8kx3gh2Pt5hx2utqgVXZJnGgbzFGP/QyG97SL39xKp/ke1u1UYy8UFPXiVD68iT5pgBpg1TfqaK88Q9ga6Czr5lICtxxCX6btHB9i0ybdRAiZbjh+TM8winPOUzvkj/NpRyHnASd0TS/1N64vsZZeNPwnO5IkziS9N46C3t7+fKA8Lht8lJ34OWHm4TEf9SvW9Wmslp7O9z0wRdpfdyc1MZLe8tVPzkSN6zo8FPE8F0THGdxBu9fJWcnO4SP9qMek/n7GL5LrvLfgG18ms/</source>
+  </file>
+  <file path="cmfcmf/OpenWeatherMap/Exception.php" generated-path="cmfcmf.OpenWeatherMap.Exception.html" hash="58dcdcdf70ac4beefb97d496a84f70b5" package="Default">
+    <docblock line="0">
+      <description>OpenWeatherMap-PHP-API — An php api to parse weather data from http://www.OpenWeatherMap.org .</description>
+      <long-description></long-description>
+      <tag name="license" description="MIT&#10;Please see the LICENSE file distributed with this source code for further&#10;information regarding copyright and licensing.&#10;Please visit the following links to read about the usage policies and the license of OpenWeatherMap before using this class." line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="cmfcmf\OpenWeatherMap" line="23" package="Default">
+      <extends>\Exception</extends>
+      <name>Exception</name>
+      <full_name>\cmfcmf\OpenWeatherMap\Exception</full_name>
+      <docblock line="23">
+        <description>Dummy class extending \Exception to allow checking if it is an OpenWeatherMap error
+or an argument error.</description>
+        <long-description></long-description>
+      </docblock>
+    </class>
+    <source>eJyNUstKxEAQvM9X9HnB5K6CLrrggo+Agpe99CadpNlkZpiZGEUEP8Iv9Evsmbjq7kEWcqqprqquzumZba3KZzMFM7izpB8JQ0vuBu1RcVUczYslfL5/wFyDEAEtQzBg0XmCcaJChQGhdqaHNgR7nOfjOGa7WplxDWTiEW3OOy5Ji8DN8uEbKjpCATwRyARcLy8Wt/cLqLkjqNgHx+shUAUjh1YY7MGbwZUEpakIauOgHlz0imKsBegxsNHgqEFXsW6EaV8cN20A1BVMEQTPdhM8seeQMtSm68wYJzvWGx/XdoQV4NoME2Pw2BBYI1pMPslGeLudqfcKhTVJsDgXVdMWZYfeZ6mUuPu//R3GylO+A7k/nezzjXC/z9tvda3lSni5Uhp78hZj/X0t32pX+kRtf6jLoe9fpiWBngPpdInV4rkkm84jpWKsGcqWyk185BrkABzr3K+PnDPpwHJueUXXDD3pMOFZijZZ/epPpv6PpXpV6k19AdyfBPM=</source>
+  </file>
+  <file path="cmfcmf/OpenWeatherMap/Util/Weather.php" generated-path="cmfcmf.OpenWeatherMap.Util.Weather.html" hash="e7bc75d0fa372a95637f4a7c0d4bd101" package="Default">
+    <docblock line="0">
+      <description>OpenWeatherMap-PHP-API — An php api to parse weather data from http://www.OpenWeatherMap.org .</description>
+      <long-description></long-description>
+      <tag name="license" description="MIT&#10;Please see the LICENSE file distributed with this source code for further&#10;information regarding copyright and licensing.&#10;Please visit the following links to read about the usage policies and the license of OpenWeatherMap before using this class." line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="cmfcmf\OpenWeatherMap\Util" line="22" package="Default">
+      <extends/>
+      <name>Weather</name>
+      <full_name>\cmfcmf\OpenWeatherMap\Util\Weather</full_name>
+      <docblock line="22">
+        <description>The weather class representing a weather object.</description>
+        <long-description></long-description>
+      </docblock>
+      <property static="false" visibility="public" line="27" namespace="cmfcmf\OpenWeatherMap\Util" package="Default">
+        <name>$id</name>
+        <default></default>
+        <docblock line="27">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;The weather id.&lt;/p&gt;" line="27" type="int" variable="">
+            <type>int</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="32" namespace="cmfcmf\OpenWeatherMap\Util" package="Default">
+        <name>$description</name>
+        <default></default>
+        <docblock line="32">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;The weather description.&lt;/p&gt;" line="32" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="37" namespace="cmfcmf\OpenWeatherMap\Util" package="Default">
+        <name>$icon</name>
+        <default></default>
+        <docblock line="37">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;the icon name.&lt;/p&gt;" line="37" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" line="44" namespace="cmfcmf\OpenWeatherMap\Util" package="Default">
+        <name>$iconUrl</name>
+        <default>"http://openweathermap.org/img/w/%s.png"</default>
+        <docblock line="44">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;The url for icons.&lt;/p&gt;" line="44" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="see" description="to see how it is used." line="44"/>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="cmfcmf\OpenWeatherMap\Util" line="67" package="Default">
+        <name>__toString</name>
+        <full_name>\cmfcmf\OpenWeatherMap\Util\Weather::__toString()</full_name>
+        <docblock line="67">
+          <description>Get the weather description.</description>
+          <long-description></long-description>
+          <tag name="return" description="" line="67" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="cmfcmf\OpenWeatherMap\Util" line="77" package="Default">
+        <name>getIconUrl</name>
+        <full_name>\cmfcmf\OpenWeatherMap\Util\Weather::getIconUrl()</full_name>
+        <docblock line="77">
+          <description>Get the icon url.</description>
+          <long-description></long-description>
+          <tag name="return" description="The icon url." line="77" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <source>eJyNVNFq2zAUffdXXEILSUnt927dVkrZAusWaMpeCkGxrx1tsiQkuWaMwj5iX9gv2ZXspLaTJjWFEvno6NxzjvX+o17rKDk7i+AMvmuUP5C5NZpbps/nX+bnV/MZPP/9B1cSCAhMc3AKNDMWoW6gkDHHIDeqhLVz+iJJ6rqO+1yxMgXEdIY/5pPgKUoiuJ0t2qW5QEYLFhFoB3ydXd98u7uBnAuEjFtn+KpymEHN3ZoQ3IJVlUkRUpUh5MpAXhl/lifjkhZK5riSYLBgJuOyIKT+bXixdsBkBo0EWo/7Ch655S5oyJUQqvY7BZe/rB/bIMuArVTVICrLCgStiIujDbR+eTOdygeGwgpJmN/nWcMUqWDWxsEUP/tB/96GSoK+N2K3ngzxirBtvOWGV2ueES6JIslKtJp5+8uc/h761A/3jot30aZVi/VLVcK85KM2aFE67wPbvlSrn5i6OJzRAFvO6E8E9AQ+/5DWR2YoZ9cj51ncvk/Cf12tKAs44RmJ2Ufge0UKuhwZ2tRw7buzn6wDOMzqq8BTqqB36xVh6TESL60yIjTco+2GaAv2oVkU+cVFgW5GkHsjxhPf1hCnqoH6TE2rLA7tMfyROWxk0C64hNHr8fOySOrk1MZaFqNd0df0bRAXA4n1bqB9yXR7sDKkR9GEEYNPL/FtIK0JXc+PhTXcGpgX+6LYbiAhaCQT+yLKK5mGY5dL774zVerGpHraEzVtzpmEnU1X/XPiP/HzDzTjJYzplElo4uBtdzaCNbon/ZoNCdM+tqmRBzzt5PIZm7vqgGVbIwy6ysjWuiNuOHUXYOPh0C3J7nTHFIapqOuHZb1k2YHuF9n9HvaLJMol3UWCbrLx6NSOpl2Hez+IZLIZ4Cn6D7zuMZ8=</source>
+  </file>
+  <file path="Example_Cache.php" generated-path="Example_Cache.html" hash="b184c9b6c24cc84a44f193fb668c00b7" package="Default">
+    <docblock line="0">
+      <description>OpenWeatherMap-PHP-API — An php api to parse weather data from http://www.OpenWeatherMap.org .</description>
+      <long-description></long-description>
+      <tag name="license" description="MIT&#10;Please see the LICENSE file distributed with this source code for further&#10;information regarding copyright and licensing.&#10;Please visit the following links to read about the usage policies and the license of OpenWeatherMap before using this class." line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+    </docblock>
+    <source>eJzNVO1u0zAU/Z+nuEyV0k602f52W6FMFUzaoNKYQGIIuc5NYi2xM9shVNMkHoJn4MF4Eq7tZKLlQ2P8Ia2U6Prcc++5Pvbhk7qoo2R3N4JdeFWjfIPMFqjPWD1evliO58sT+Pb5C8wlEBBYLcAqqJk2CG2AQsosg0yrCgpr62mStG072eSaKJ3DhGq4Mk9LwVESwdnJ6y60LJFRwCACZcDpyfHi5fkCMlEipMJYLVaNxRRaYQtCCANGNZojcJUiZEpD1mhXy5EJSYGKWaEkaMyZToXMCVmvtcgLC0ymEFqg+GSzg4/CCOt7yFRZqtZllkJeGSdbI0uBrVQTEI1hOUKtiEug8bQu3KtT2dZAYYXUmMtzrF4FL5kxEz8Up/2P87sfKvH93RN7N5NtvCJst71Vz1vXIiVcEkUNqeNVRv/LTdKD3y9dzle0jYzbY8YLPIgijdeN0DiMAzzZao/cFo8IliRwymTeuFHTRL3XhlavYU0GANVKKPtlysRHo2k0cBE4gjjFODBcSGENDDmTtAcQV0iG4jGQbWJR1agFK2N4l2LGmtK+dxSNzzi6wwaexSdW1WTJ/SlckNC7FrjTBMKtVSitt94Ezjs3Y8j6EFDO05NooNqK6CW2WyYZxl0RP6f4Mezv7bk5DPrTdgQudzzL0XZZw/gZajIpgUPf9HYjoDTkhYKdxdv52fJ0AfuHhYZkdindb6db7YnHM4tuFsw22u1Pdyf0kn8psT/QIpdkbG8O72j4UQPptyhTAxsOiG4ioMdXcY9jkdSGsKniXSjx77pZ0ZGiAy65P9LCeIJ0OLDrGknrdYN6vaWdXhVdDSPPEEq5J8zjuEB+5e+EsCPkA8/VUXVMgSjw0B349XDlhkdj68k00qgkZKw0GKK30UNF0W7+q6rnaP8jQeYnQVxJ8oF9iLTzv5UGw5uBu2DHM4NUNzW30H2M7qX69jsxCUUU</source>
+  </file>
+  <file path="cmfcmf/OpenWeatherMap/Util/Temperature.php" generated-path="cmfcmf.OpenWeatherMap.Util.Temperature.html" hash="13a3d83fbbbbb3def85c54190887c42d" package="Default">
+    <docblock line="0">
+      <description>OpenWeatherMap-PHP-API — An php api to parse weather data from http://www.OpenWeatherMap.org .</description>
+      <long-description></long-description>
+      <tag name="license" description="MIT&#10;Please see the LICENSE file distributed with this source code for further&#10;information regarding copyright and licensing.&#10;Please visit the following links to read about the usage policies and the license of OpenWeatherMap before using this class." line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="cmfcmf\OpenWeatherMap\Util" line="22" package="Default">
+      <extends/>
+      <name>Temperature</name>
+      <full_name>\cmfcmf\OpenWeatherMap\Util\Temperature</full_name>
+      <docblock line="22">
+        <description>The temperature class representing a temperature object.</description>
+        <long-description></long-description>
+      </docblock>
+      <property static="false" visibility="public" line="27" namespace="cmfcmf\OpenWeatherMap\Util" package="Default">
+        <name>$now</name>
+        <default></default>
+        <docblock line="27">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;The current temperature.&lt;/p&gt;" line="27" type="\cmfcmf\OpenWeatherMap\Util\Unit" variable="">
+            <type>\cmfcmf\OpenWeatherMap\Util\Unit</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="32" namespace="cmfcmf\OpenWeatherMap\Util" package="Default">
+        <name>$min</name>
+        <default></default>
+        <docblock line="32">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;The minimal temperature.&lt;/p&gt;" line="32" type="\cmfcmf\OpenWeatherMap\Util\Unit" variable="">
+            <type>\cmfcmf\OpenWeatherMap\Util\Unit</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="37" namespace="cmfcmf\OpenWeatherMap\Util" package="Default">
+        <name>$max</name>
+        <default></default>
+        <docblock line="37">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;The maximal temperature.&lt;/p&gt;" line="37" type="\cmfcmf\OpenWeatherMap\Util\Unit" variable="">
+            <type>\cmfcmf\OpenWeatherMap\Util\Unit</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="cmfcmf\OpenWeatherMap\Util" line="59" package="Default">
+        <name>__toString</name>
+        <full_name>\cmfcmf\OpenWeatherMap\Util\Temperature::__toString()</full_name>
+        <docblock line="59">
+          <description>Returns the current temperature as formatted string.</description>
+          <long-description></long-description>
+          <tag name="return" description="The current temperature as a formatted string." line="59" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="cmfcmf\OpenWeatherMap\Util" line="68" package="Default">
+        <name>getUnit</name>
+        <full_name>\cmfcmf\OpenWeatherMap\Util\Temperature::getUnit()</full_name>
+        <docblock line="68">
+          <description>Returns the current temperature's unit.</description>
+          <long-description></long-description>
+          <tag name="return" description="The current temperature&amp;#039;s unit." line="68" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="cmfcmf\OpenWeatherMap\Util" line="77" package="Default">
+        <name>getValue</name>
+        <full_name>\cmfcmf\OpenWeatherMap\Util\Temperature::getValue()</full_name>
+        <docblock line="77">
+          <description>Returns the current temperature.</description>
+          <long-description></long-description>
+          <tag name="return" description="The current temperature." line="77" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="cmfcmf\OpenWeatherMap\Util" line="86" package="Default">
+        <name>getDescription</name>
+        <full_name>\cmfcmf\OpenWeatherMap\Util\Temperature::getDescription()</full_name>
+        <docblock line="86">
+          <description>Returns the current temperature's description.</description>
+          <long-description></long-description>
+          <tag name="return" description="The current temperature&amp;#039;s description." line="86" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="cmfcmf\OpenWeatherMap\Util" line="95" package="Default">
+        <name>getFormatted</name>
+        <full_name>\cmfcmf\OpenWeatherMap\Util\Temperature::getFormatted()</full_name>
+        <docblock line="95">
+          <description>Returns the current temperature as formatted string.</description>
+          <long-description></long-description>
+          <tag name="return" description="The current temperature as formatted string." line="95" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <source>eJzFVNtu00AQffdXzEMlStU470ALVSmiEoWIpvBSqZrY42TB3l3trusiVKkfwRfyJcyunYvdpHH6ghUp0uyZM3PO7Oybt3qmo+HBQQQH8EWT/E7oZmQuUA9GH0eDk9E5/H34AycSGAioBTgFGo0lqGoopOgQMqMKmDmnXw2HVVXFba5YmSnEXMOXeZeLhCQTXJyPm9AoJ+SAJQLOgE/np2efL88gEzlBKqwzYlI6SqESbsYIYcGq0iQEiUoJMmUgK42v5cmE5ECBTigJhqZoUiGnjNS/jJjOHKBMoW6B43G7g1thhQs9ZCrPVeUzcyF/Wi/bEKaAE1XWiNLilEAr5hJkA60Pz9WprGMoTIgb83meNahIcrQ2DqZ47U/61w81DP31xC486eIVY5vxFnNerUXKuGEUSSzIavT2Fxn/rtvU11dO5K+j+a0asyeOCk0GXcnyg2b2UhuyJJ33AlsANflBiYtDrRo8Xp5GvyPgL3D7j/u+RQNXksfmKyWlMcy6Shg3yGH41+WEJwR7UlXc45NchZCiwHw7FwO3cuFdTy68e8x1ylfPEfskqVrvVcAtSvOCYlEX90K3OdNOYDXb5HcS8G6bxkWekI6MxHyd9qyUSdjam5tESd76MnH7CxGHy/YOl4VfBoL6Uvhvz+/V4NiLPmqG3Dny8o6amXWPWMhRMwIfvn80iK/EqqQNi77GUEAL9ePjXyv/boUXptFuQnIT3jQTT4EbSTb55dRlwO13/WhqLm0ZHK+in6nzhYWSJ7CjtE7Wei1Tcn64fYQsoM9UsWP7W/v+hnlJPRtvsM/3PyWbGKF97d3HsCZ5o6r3S2xPba2M/7tJu+0R9/5hntBT6wp+rvQ++gdH1OmL</source>
+  </file>
+  <file path="cmfcmf/OpenWeatherMap/Forecast.php" generated-path="cmfcmf.OpenWeatherMap.Forecast.html" hash="e1d03bbec9edc603389fb787fd45f367" package="Default">
+    <docblock line="0">
+      <description>OpenWeatherMap-PHP-API — An php api to parse weather data from http://www.OpenWeatherMap.org .</description>
+      <long-description></long-description>
+      <tag name="license" description="MIT&#10;Please see the LICENSE file distributed with this source code for further&#10;information regarding copyright and licensing.&#10;Please visit the following links to read about the usage policies and the license of OpenWeatherMap before using this class." line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="cmfcmf\OpenWeatherMap" line="29" package="Default">
+      <extends/>
+      <implements>\Iterator</implements>
+      <name>Forecast</name>
+      <full_name>\cmfcmf\OpenWeatherMap\Forecast</full_name>
+      <docblock line="29">
+        <description>Weather class returned by cmfcmf\OpenWeatherMap-&gt;getWeather().</description>
+        <long-description></long-description>
+        <tag name="see" description="The function using it." line="29"/>
+      </docblock>
+      <property static="false" visibility="public" line="38" namespace="cmfcmf\OpenWeatherMap" package="Default">
+        <name>$copyright</name>
+        <default>"Weather data from &lt;a href=\"http://www.openweathermap.org\"&gt;OpenWeatherMap.org&lt;/a&gt;"</default>
+        <docblock line="38">
+          <description>The copyright notice. This is no offical text, this hint was made regarding to http://www.http://openweathermap.org/copyright.</description>
+          <long-description></long-description>
+          <tag name="var" description="" line="38" type="" variable="$copyright"/>
+          <tag name="see" description="http://www.http://openweathermap.org/copyright" line="38"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="45" namespace="cmfcmf\OpenWeatherMap" package="Default">
+        <name>$city</name>
+        <default></default>
+        <docblock line="45">
+          <description>A city object.</description>
+          <long-description></long-description>
+          <tag name="var" description="" line="45" type="\cmfcmf\OpenWeatherMap\Util\City" variable="">
+            <type>\cmfcmf\OpenWeatherMap\Util\City</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="52" namespace="cmfcmf\OpenWeatherMap" package="Default">
+        <name>$lastUpdate</name>
+        <default></default>
+        <docblock line="52">
+          <description>The time of the last update of this weather data.</description>
+          <long-description></long-description>
+          <tag name="var" description="" line="52" type="\DateTime" variable="">
+            <type>\DateTime</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" line="61" namespace="cmfcmf\OpenWeatherMap" package="Default">
+        <name>$forecasts</name>
+        <default></default>
+        <docblock line="61">
+          <description>An array of {@link WeatherForecast} objects.</description>
+          <long-description></long-description>
+          <tag name="var" description="" line="61" type="array" variable="">
+            <type>array</type>
+          </tag>
+          <tag name="see" description="The WeatherForecast class." line="61"/>
+        </docblock>
+      </property>
+    </class>
+    <source>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</source>
+  </file>
+  <file path="cmfcmf/OpenWeatherMap.php" generated-path="cmfcmf.OpenWeatherMap.html" hash="ca1922480ac8f449a87caca3c81fc6ed" package="Default">
+    <docblock line="0">
+      <description>OpenWeatherMap-PHP-API — An php api to parse weather data from http://www.OpenWeatherMap.org .</description>
+      <long-description></long-description>
+      <tag name="license" description="MIT&#10;Please see the LICENSE file distributed with this source code for further&#10;information regarding copyright and licensing.&#10;Please visit the following links to read about the usage policies and the license of OpenWeatherMap before using this class." line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="cmfcmf" line="32" package="Default">
+      <extends/>
+      <name>OpenWeatherMap</name>
+      <full_name>\cmfcmf\OpenWeatherMap</full_name>
+      <docblock line="32">
+        <description>Main class for the OpenWeatherMap-PHP-API. Only use this class.</description>
+        <long-description></long-description>
+        <tag name="api" description="" line="32"/>
+      </docblock>
+      <property static="false" visibility="private" line="37" namespace="cmfcmf" package="Default">
+        <name>$weatherUrl</name>
+        <default>"http://api.openweathermap.org/data/2.5/weather?"</default>
+        <docblock line="37">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;The basic api url to fetch weather data from.&lt;/p&gt;" line="37" type="string" variable="$weatherUrl">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" line="42" namespace="cmfcmf" package="Default">
+        <name>$weatherHourlyForecastUrl</name>
+        <default>"http://api.openweathermap.org/data/2.5/forecast?"</default>
+        <docblock line="42">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;The basic api url to fetch data from.&lt;/p&gt;" line="42" type="string" variable="$url">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" line="47" namespace="cmfcmf" package="Default">
+        <name>$weatherDailyForecastUrl</name>
+        <default>"http://api.openweathermap.org/data/2.5/forecast/daily?"</default>
+        <docblock line="47">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;The basic api url to fetch data from.&lt;/p&gt;" line="47" type="string" variable="$url">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" line="49" namespace="cmfcmf" package="Default">
+        <name>$cacheClass</name>
+        <default>false</default>
+        <docblock line="49">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" line="51" namespace="cmfcmf" package="Default">
+        <name>$seconds</name>
+        <default></default>
+        <docblock line="51">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="cmfcmf" line="63" package="Default">
+        <name>__construct</name>
+        <full_name>\cmfcmf\OpenWeatherMap::__construct()</full_name>
+        <docblock line="63">
+          <description>Constructs the OpenWeatherMap object.</description>
+          <long-description></long-description>
+          <tag name="param" description="&lt;p&gt;If set to false, caching is disabled. If this is a valid class extending cmfcmf\OpenWeatherMap\Util\Cache, caching will be enabled. Default false.&lt;/p&gt;&#10;" line="63" type="bool|string" variable="$cacheClass">
+            <type>bool</type>
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;How long weather data shall be cached. Default 10 minutes.&lt;/p&gt;" line="63" type="int" variable="$seconds">
+            <type>int</type>
+          </tag>
+          <tag name="throws" description="If $cache is neither false nor a valid callable extending cmfcmf\OpenWeatherMap\Util\Cache." line="63" type="\Exception">
+            <type>\Exception</type>
+          </tag>
+          <tag name="api" description="" line="63"/>
+        </docblock>
+        <argument line="0">
+          <name>$cacheClass</name>
+          <default>false</default>
+          <type>bool|string</type>
+        </argument>
+        <argument line="0">
+          <name>$seconds</name>
+          <default>600</default>
+          <type>int</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="cmfcmf" line="115" package="Default">
+        <name>getWeather</name>
+        <full_name>\cmfcmf\OpenWeatherMap::getWeather()</full_name>
+        <docblock line="115">
+          <description>Returns the current weather at the place you specified as an object.</description>
+          <long-description></long-description>
+          <tag name="param" description="&lt;p&gt;The place to get weather information for. For possible values see below.&lt;/p&gt;" line="115" type="array|int|string" variable="$query">
+            <type>array</type>
+            <type>int</type>
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;Can be either 'metric' or 'imperial' (default). This affects almost all units returned.&lt;/p&gt;&#10;" line="115" type="string" variable="$units">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;The language to use for descriptions, default is 'en'. For possible values see below.&lt;/p&gt;" line="115" type="string" variable="$lang">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;Your app id, default ''. See http://openweathermap.org/appid for more details.&lt;/p&gt;&#10;" line="115" type="string" variable="$appid">
+            <type>string</type>
+          </tag>
+          <tag name="return" description="Returns a new {@link Weather} object.&#10;There are three ways to specify the place to get weather information for:&#10;- Use the city name: $query must be a string containing the city name.&#10;- Use the city id: $query must be an integer containing the city id.&#10;- Use the coordinates: $query must be an associative array containing the &amp;#039;lat&amp;#039; and &amp;#039;lon&amp;#039; values.&#10;Available languages are (as of 17. July 2013):&#10;- English - en&#10;- Russian - ru&#10;- Italian - it&#10;- Spanish - sp&#10;- Ukrainian - ua&#10;- German - de&#10;- Portuguese - pt&#10;- Romanian - ro&#10;- Polish - pl&#10;- Finnish - fi&#10;- Dutch - nl&#10;- French - fr&#10;- Bulgarian - bg&#10;- Swedish - se&#10;- Chinese Traditional - zh_tw&#10;- Chinese Simplified - zh_cn&#10;- Turkish - tr" line="115" type="object">
+            <type>object</type>
+          </tag>
+          <tag name="api" description="" line="115"/>
+        </docblock>
+        <argument line="0">
+          <name>$query</name>
+          <default></default>
+          <type>array|int|string</type>
+        </argument>
+        <argument line="0">
+          <name>$units</name>
+          <default>'imperial'</default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$lang</name>
+          <default>'en'</default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$appid</name>
+          <default>''</default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="cmfcmf" line="157" package="Default">
+        <name>getWeatherForecast</name>
+        <full_name>\cmfcmf\OpenWeatherMap::getWeatherForecast()</full_name>
+        <docblock line="157">
+          <description>Returns the current weather at the place you specified as an object.</description>
+          <long-description></long-description>
+          <tag name="param" description="&lt;p&gt;The place to get weather information for. For possible values see below.&lt;/p&gt;" line="157" type="array|int|string" variable="$query">
+            <type>array</type>
+            <type>int</type>
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;Can be either 'metric' or 'imperial' (default). This affects almost all units returned.&lt;/p&gt;&#10;" line="157" type="string" variable="$units">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;The language to use for descriptions, default is 'en'. For possible values see below.&lt;/p&gt;" line="157" type="string" variable="$lang">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;Your app id, default ''. See http://openweathermap.org/appid for more details.&lt;/p&gt;&#10;" line="157" type="string" variable="$appid">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;For how much days you want to get a forecast. Default 1, maximum: 14.&lt;/p&gt;" line="157" type="int" variable="$days">
+            <type>int</type>
+          </tag>
+          <tag name="return" description="Returns a new {@link Forecast} object.&#10;There are three ways to specify the place to get weather information for:&#10;- Use the city name: $query must be a string containing the city name.&#10;- Use the city id: $query must be an integer containing the city id.&#10;- Use the coordinates: $query must be an associative array containing the &amp;#039;lat&amp;#039; and &amp;#039;lon&amp;#039; values.&#10;Available languages are (as of 17. July 2013):&#10;- English - en&#10;- Russian - ru&#10;- Italian - it&#10;- Spanish - sp&#10;- Ukrainian - ua&#10;- German - de&#10;- Portuguese - pt&#10;- Romanian - ro&#10;- Polish - pl&#10;- Finnish - fi&#10;- Dutch - nl&#10;- French - fr&#10;- Bulgarian - bg&#10;- Swedish - se&#10;- Chinese Traditional - zh_tw&#10;- Chinese Simplified - zh_cn&#10;- Turkish - tr" line="157" type="object">
+            <type>object</type>
+          </tag>
+          <tag name="api" description="" line="157"/>
+        </docblock>
+        <argument line="0">
+          <name>$query</name>
+          <default></default>
+          <type>array|int|string</type>
+        </argument>
+        <argument line="0">
+          <name>$units</name>
+          <default>'imperial'</default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$lang</name>
+          <default>'en'</default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$appid</name>
+          <default>''</default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$days</name>
+          <default>1</default>
+          <type>int</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="cmfcmf" line="165" package="Default">
+        <name>getRawData</name>
+        <full_name>\cmfcmf\OpenWeatherMap::getRawData()</full_name>
+        <docblock line="165">
+          <description></description>
+          <long-description></long-description>
+          <tag name="deprecated" description="Use {@link self::getRawWeatherData()} instead." line="165"/>
+        </docblock>
+        <argument line="0">
+          <name>$query</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="0">
+          <name>$units</name>
+          <default>'imperial'</default>
+          <type/>
+        </argument>
+        <argument line="0">
+          <name>$lang</name>
+          <default>'en'</default>
+          <type/>
+        </argument>
+        <argument line="0">
+          <name>$appid</name>
+          <default>''</default>
+          <type/>
+        </argument>
+        <argument line="0">
+          <name>$mode</name>
+          <default>'xml'</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="cmfcmf" line="209" package="Default">
+        <name>getRawWeatherData</name>
+        <full_name>\cmfcmf\OpenWeatherMap::getRawWeatherData()</full_name>
+        <docblock line="209">
+          <description>Directly returns the xml/json/html string returned by OpenWeatherMap for the current weather.</description>
+          <long-description></long-description>
+          <tag name="param" description="&lt;p&gt;The place to get weather information for. For possible values see below.&lt;/p&gt;" line="209" type="array|int|string" variable="$query">
+            <type>array</type>
+            <type>int</type>
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;Can be either 'metric' or 'imperial' (default). This affects almost all units returned.&lt;/p&gt;&#10;" line="209" type="string" variable="$units">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;The language to use for descriptions, default is 'en'. For possible values see below.&lt;/p&gt;" line="209" type="string" variable="$lang">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;Your app id, default ''. See http://openweathermap.org/appid for more details.&lt;/p&gt;&#10;" line="209" type="string" variable="$appid">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;The format of the data fetched. Possible values are 'json', 'html' and 'xml' (default).&lt;/p&gt;&#10;" line="209" type="string" variable="$mode">
+            <type>string</type>
+          </tag>
+          <tag name="return" description="Returns false on failure and the fetched data in the format you specified on success." line="209" type="bool|string">
+            <type>bool</type>
+            <type>string</type>
+          </tag>
+          <tag name="warning" description="If an error occured, OpenWeatherMap returns data in json format ALWAYS&#10;There are three ways to specify the place to get weather information for:&#10;- Use the city name: $query must be a string containing the city name.&#10;- Use the city id: $query must be an integer containing the city id.&#10;- Use the coordinates: $query must be an associative array containing the &amp;#039;lat&amp;#039; and &amp;#039;lon&amp;#039; values.&#10;Available languages are (as of 17. July 2013):&#10;- English - en&#10;- Russian - ru&#10;- Italian - it&#10;- Spanish - sp&#10;- Ukrainian - ua&#10;- German - de&#10;- Portuguese - pt&#10;- Romanian - ro&#10;- Polish - pl&#10;- Finnish - fi&#10;- Dutch - nl&#10;- French - fr&#10;- Bulgarian - bg&#10;- Swedish - se&#10;- Chinese Traditional - zh_tw&#10;- Chinese Simplified - zh_cn&#10;- Turkish - tr" line="209"/>
+          <tag name="api" description="" line="209"/>
+        </docblock>
+        <argument line="0">
+          <name>$query</name>
+          <default></default>
+          <type>array|int|string</type>
+        </argument>
+        <argument line="0">
+          <name>$units</name>
+          <default>'imperial'</default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$lang</name>
+          <default>'en'</default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$appid</name>
+          <default>''</default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$mode</name>
+          <default>'xml'</default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="cmfcmf" line="259" package="Default">
+        <name>getRawHourlyForecastData</name>
+        <full_name>\cmfcmf\OpenWeatherMap::getRawHourlyForecastData()</full_name>
+        <docblock line="259">
+          <description>Directly returns the xml/json/html string returned by OpenWeatherMap for the hourly forecast.</description>
+          <long-description></long-description>
+          <tag name="param" description="&lt;p&gt;The place to get weather information for. For possible values see below.&lt;/p&gt;" line="259" type="array|int|string" variable="$query">
+            <type>array</type>
+            <type>int</type>
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;Can be either 'metric' or 'imperial' (default). This affects almost all units returned.&lt;/p&gt;&#10;" line="259" type="string" variable="$units">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;The language to use for descriptions, default is 'en'. For possible values see below.&lt;/p&gt;" line="259" type="string" variable="$lang">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;Your app id, default ''. See http://openweathermap.org/appid for more details.&lt;/p&gt;&#10;" line="259" type="string" variable="$appid">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;The format of the data fetched. Possible values are 'json', 'html' and 'xml' (default).&lt;/p&gt;&#10;" line="259" type="string" variable="$mode">
+            <type>string</type>
+          </tag>
+          <tag name="return" description="Returns false on failure and the fetched data in the format you specified on success." line="259" type="bool|string">
+            <type>bool</type>
+            <type>string</type>
+          </tag>
+          <tag name="warning" description="If an error occured, OpenWeatherMap returns data in json format ALWAYS&#10;There are three ways to specify the place to get weather information for:&#10;- Use the city name: $query must be a string containing the city name.&#10;- Use the city id: $query must be an integer containing the city id.&#10;- Use the coordinates: $query must be an associative array containing the &amp;#039;lat&amp;#039; and &amp;#039;lon&amp;#039; values.&#10;Available languages are (as of 17. July 2013):&#10;- English - en&#10;- Russian - ru&#10;- Italian - it&#10;- Spanish - sp&#10;- Ukrainian - ua&#10;- German - de&#10;- Portuguese - pt&#10;- Romanian - ro&#10;- Polish - pl&#10;- Finnish - fi&#10;- Dutch - nl&#10;- French - fr&#10;- Bulgarian - bg&#10;- Swedish - se&#10;- Chinese Traditional - zh_tw&#10;- Chinese Simplified - zh_cn&#10;- Turkish - tr" line="259"/>
+          <tag name="api" description="" line="259"/>
+        </docblock>
+        <argument line="0">
+          <name>$query</name>
+          <default></default>
+          <type>array|int|string</type>
+        </argument>
+        <argument line="0">
+          <name>$units</name>
+          <default>'imperial'</default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$lang</name>
+          <default>'en'</default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$appid</name>
+          <default>''</default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$mode</name>
+          <default>'xml'</default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="cmfcmf" line="309" package="Default">
+        <name>getRawDailyForecastData</name>
+        <full_name>\cmfcmf\OpenWeatherMap::getRawDailyForecastData()</full_name>
+        <docblock line="309">
+          <description>Directly returns the xml/json/html string returned by OpenWeatherMap for the daily forecast.</description>
+          <long-description></long-description>
+          <tag name="param" description="&lt;p&gt;The place to get weather information for. For possible values see below.&lt;/p&gt;" line="309" type="array|int|string" variable="$query">
+            <type>array</type>
+            <type>int</type>
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;Can be either 'metric' or 'imperial' (default). This affects almost all units returned.&lt;/p&gt;&#10;" line="309" type="string" variable="$units">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;The language to use for descriptions, default is 'en'. For possible values see below.&lt;/p&gt;" line="309" type="string" variable="$lang">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;Your app id, default ''. See http://openweathermap.org/appid for more details.&lt;/p&gt;&#10;" line="309" type="string" variable="$appid">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;The format of the data fetched. Possible values are 'json', 'html' and 'xml' (default).&lt;/p&gt;&#10;" line="309" type="string" variable="$mode">
+            <type>string</type>
+          </tag>
+          <tag name="return" description="Returns false on failure and the fetched data in the format you specified on success." line="309" type="bool|string">
+            <type>bool</type>
+            <type>string</type>
+          </tag>
+          <tag name="warning" description="If an error occured, OpenWeatherMap returns data in json format ALWAYS&#10;There are three ways to specify the place to get weather information for:&#10;- Use the city name: $query must be a string containing the city name.&#10;- Use the city id: $query must be an integer containing the city id.&#10;- Use the coordinates: $query must be an associative array containing the &amp;#039;lat&amp;#039; and &amp;#039;lon&amp;#039; values.&#10;Available languages are (as of 17. July 2013):&#10;- English - en&#10;- Russian - ru&#10;- Italian - it&#10;- Spanish - sp&#10;- Ukrainian - ua&#10;- German - de&#10;- Portuguese - pt&#10;- Romanian - ro&#10;- Polish - pl&#10;- Finnish - fi&#10;- Dutch - nl&#10;- French - fr&#10;- Bulgarian - bg&#10;- Swedish - se&#10;- Chinese Traditional - zh_tw&#10;- Chinese Simplified - zh_cn&#10;- Turkish - tr" line="309"/>
+          <tag name="api" description="" line="309"/>
+        </docblock>
+        <argument line="0">
+          <name>$query</name>
+          <default></default>
+          <type>array|int|string</type>
+        </argument>
+        <argument line="0">
+          <name>$units</name>
+          <default>'imperial'</default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$lang</name>
+          <default>'en'</default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$appid</name>
+          <default>''</default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$mode</name>
+          <default>'xml'</default>
+          <type>string</type>
+        </argument>
+      </method>
+    </class>
+    <source>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</source>
+  </file>
+  <file path="cmfcmf/OpenWeatherMap/Weather.php" generated-path="cmfcmf.OpenWeatherMap.Weather.html" hash="9ce7ddaf79e16e066429070644b12015" package="Default">
+    <docblock line="0">
+      <description>OpenWeatherMap-PHP-API — An php api to parse weather data from http://www.OpenWeatherMap.org .</description>
+      <long-description></long-description>
+      <tag name="license" description="MIT&#10;Please see the LICENSE file distributed with this source code for further&#10;information regarding copyright and licensing.&#10;Please visit the following links to read about the usage policies and the license of OpenWeatherMap before using this class." line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="cmfcmf\OpenWeatherMap" line="31" package="Default">
+      <extends/>
+      <name>Weather</name>
+      <full_name>\cmfcmf\OpenWeatherMap\Weather</full_name>
+      <docblock line="31">
+        <description>Weather class returned by {@link OpenWeatherMap::getWeather()}.</description>
+        <long-description></long-description>
+      </docblock>
+      <property static="false" visibility="public" line="38" namespace="cmfcmf\OpenWeatherMap" package="Default">
+        <name>$city</name>
+        <default></default>
+        <docblock line="38">
+          <description>The city object.</description>
+          <long-description></long-description>
+          <tag name="var" description="" line="38" type="\cmfcmf\OpenWeatherMap\Util\City" variable="">
+            <type>\cmfcmf\OpenWeatherMap\Util\City</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="45" namespace="cmfcmf\OpenWeatherMap" package="Default">
+        <name>$temperature</name>
+        <default></default>
+        <docblock line="45">
+          <description>The temperature object.</description>
+          <long-description></long-description>
+          <tag name="var" description="" line="45" type="\cmfcmf\OpenWeatherMap\Util\Temperature" variable="">
+            <type>\cmfcmf\OpenWeatherMap\Util\Temperature</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="50" namespace="cmfcmf\OpenWeatherMap" package="Default">
+        <name>$humidity</name>
+        <default></default>
+        <docblock line="50">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="" line="50" type="\cmfcmf\OpenWeatherMap\Util\Unit" variable="">
+            <type>\cmfcmf\OpenWeatherMap\Util\Unit</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="55" namespace="cmfcmf\OpenWeatherMap" package="Default">
+        <name>$pressure</name>
+        <default></default>
+        <docblock line="55">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="" line="55" type="\cmfcmf\OpenWeatherMap\Util\Unit" variable="">
+            <type>\cmfcmf\OpenWeatherMap\Util\Unit</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="60" namespace="cmfcmf\OpenWeatherMap" package="Default">
+        <name>$wind</name>
+        <default></default>
+        <docblock line="60">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="" line="60" type="\cmfcmf\OpenWeatherMap\Util\Wind" variable="">
+            <type>\cmfcmf\OpenWeatherMap\Util\Wind</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="65" namespace="cmfcmf\OpenWeatherMap" package="Default">
+        <name>$clouds</name>
+        <default></default>
+        <docblock line="65">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="" line="65" type="\cmfcmf\OpenWeatherMap\Util\Unit" variable="">
+            <type>\cmfcmf\OpenWeatherMap\Util\Unit</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="70" namespace="cmfcmf\OpenWeatherMap" package="Default">
+        <name>$precipitation</name>
+        <default></default>
+        <docblock line="70">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="" line="70" type="\cmfcmf\OpenWeatherMap\Util\Unit" variable="">
+            <type>\cmfcmf\OpenWeatherMap\Util\Unit</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="75" namespace="cmfcmf\OpenWeatherMap" package="Default">
+        <name>$sun</name>
+        <default></default>
+        <docblock line="75">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="" line="75" type="\cmfcmf\OpenWeatherMap\Util\Sun" variable="">
+            <type>\cmfcmf\OpenWeatherMap\Util\Sun</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="80" namespace="cmfcmf\OpenWeatherMap" package="Default">
+        <name>$weather</name>
+        <default></default>
+        <docblock line="80">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="" line="80" type="\cmfcmf\OpenWeatherMap\Util\Weather" variable="">
+            <type>\cmfcmf\OpenWeatherMap\Util\Weather</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="85" namespace="cmfcmf\OpenWeatherMap" package="Default">
+        <name>$lastUpdate</name>
+        <default></default>
+        <docblock line="85">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="" line="85" type="\DateTime" variable="">
+            <type>\DateTime</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="94" namespace="cmfcmf\OpenWeatherMap" package="Default">
+        <name>$copyright</name>
+        <default>"Weather data from &lt;a href=\"http://www.openweathermap.org\"&gt;OpenWeatherMap.org&lt;/a&gt;"</default>
+        <docblock line="94">
+          <description>The copyright notice. This is no offical text, this hint was made regarding to http://www.http://openweathermap.org/copyright.</description>
+          <long-description></long-description>
+          <tag name="var" description="" line="94" type="" variable="$copyright"/>
+          <tag name="see" description="http://www.http://openweathermap.org/copyright" line="94"/>
+        </docblock>
+      </property>
+    </class>
+    <source>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</source>
+  </file>
+  <file path="cmfcmf/OpenWeatherMap/Util/Time.php" generated-path="cmfcmf.OpenWeatherMap.Util.Time.html" hash="90b8bacaf38198aeb276f0c01d59e5ae" package="Default">
+    <docblock line="0">
+      <description>OpenWeatherMap-PHP-API — An php api to parse weather data from http://www.OpenWeatherMap.org .</description>
+      <long-description></long-description>
+      <tag name="license" description="MIT&#10;Please see the LICENSE file distributed with this source code for further&#10;information regarding copyright and licensing.&#10;Please visit the following links to read about the usage policies and the license of OpenWeatherMap before using this class." line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="cmfcmf\OpenWeatherMap\Util" line="22" package="Default">
+      <extends/>
+      <name>Time</name>
+      <full_name>\cmfcmf\OpenWeatherMap\Util\Time</full_name>
+      <docblock line="22">
+        <description>The time class representing a time object.</description>
+        <long-description></long-description>
+      </docblock>
+      <property static="false" visibility="public" line="27" namespace="cmfcmf\OpenWeatherMap\Util" package="Default">
+        <name>$from</name>
+        <default></default>
+        <docblock line="27">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;The start time for the forecast.&lt;/p&gt;" line="27" type="\DateTime" variable="">
+            <type>\DateTime</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="32" namespace="cmfcmf\OpenWeatherMap\Util" package="Default">
+        <name>$to</name>
+        <default></default>
+        <docblock line="32">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;The end time for the forecast.&lt;/p&gt;" line="32" type="\DateTime" variable="">
+            <type>\DateTime</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="37" namespace="cmfcmf\OpenWeatherMap\Util" package="Default">
+        <name>$day</name>
+        <default></default>
+        <docblock line="37">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;The day of the forecast.&lt;/p&gt;" line="37" type="\DateTime" variable="">
+            <type>\DateTime</type>
+          </tag>
+        </docblock>
+      </property>
+    </class>
+    <source>eJydVNtqGzEQfd+vmIeCL9Q2tOQhTZM2pIEY6tYQl1IwhPHurK1WKwlJ6yWEQD+iX9gv6Uiy3dgOtakwu2Z05syZo9G+fWcWJht0uxl04bMh9ZXQL8iO0PTGN+Pe5XgIv3/+gksFDAQ0ArwGg9YRNAkKBXqE0uoKFt6bN4NB0zT9ba6+tnPoc41Q5r0UOSkmGA0nq9BYEnLAEQFnwMfh1fWn22sohSQohPNWzGpPBTTCLxghHDhd25wg1wVBqS2UtQ21AplQHKjQC63A0hxtIdSckebeivnCA6oCkgSO97cVLIUTPmootZS6CZlSqB8utG0JC8CZrhOidjgnMJq5BLlIG8Lr7nS5YyjMiIWFvMAau8glOtePpoTe/+nfcahB1HckduPJLl4zdnW81ZrXGFEwbpBlCityBoP9Vcm/6Tb19IsX8ixbT9WEPfGiotQsm2gsOVI+mIBpR8++U+77kT2hJhzOHjLgFWnCYolLtDD9gJ7CfmR2Hq1PLGEM0slZytEFvpg2iG9Tz/hk4EUYVBZ3mJnCeR7P6/VRrAXeh8k4zMfAfcIrHkFPbJuiZse6CNgU5huKFYSLwy7Hno91ayc3LO6Nn0d5siERypNVKJ/rraxVHm/n3V2uFReqc9+OIl/GWuegaik7MSXNQFiihLZwjhjqdafzZCdqjD2eR2M2jifSztk2MlXYxjHjDioc1LN0vYv0eWm3vvWqXtHqPMl8BJJ89f9bWiqaS61oPan70g9s87N3gUXR3tQbhrNYomy3xpNXr29OTkcnp7fbujf/sr9k/IHiXpP2nWqrzXW9vY3UR5rhxP+Y/QGdLuct</source>
+  </file>
+  <file path="cmfcmf/OpenWeatherMap/Util/City.php" generated-path="cmfcmf.OpenWeatherMap.Util.City.html" hash="27e76f5978ddea421cf661b06cfe7571" package="Default">
+    <docblock line="0">
+      <description>OpenWeatherMap-PHP-API — An php api to parse weather data from http://www.OpenWeatherMap.org .</description>
+      <long-description></long-description>
+      <tag name="license" description="MIT&#10;Please see the LICENSE file distributed with this source code for further&#10;information regarding copyright and licensing.&#10;Please visit the following links to read about the usage policies and the license of OpenWeatherMap before using this class." line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="cmfcmf\OpenWeatherMap\Util" line="22" package="Default">
+      <extends/>
+      <name>City</name>
+      <full_name>\cmfcmf\OpenWeatherMap\Util\City</full_name>
+      <docblock line="22">
+        <description>The city class representing a city object.</description>
+        <long-description></long-description>
+      </docblock>
+      <property static="false" visibility="public" line="27" namespace="cmfcmf\OpenWeatherMap\Util" package="Default">
+        <name>$id</name>
+        <default></default>
+        <docblock line="27">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;The city id.&lt;/p&gt;" line="27" type="int" variable="">
+            <type>int</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="32" namespace="cmfcmf\OpenWeatherMap\Util" package="Default">
+        <name>$name</name>
+        <default></default>
+        <docblock line="32">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;The name of the city.&lt;/p&gt;" line="32" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="37" namespace="cmfcmf\OpenWeatherMap\Util" package="Default">
+        <name>$lon</name>
+        <default></default>
+        <docblock line="37">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;The longitude of the city.&lt;/p&gt;" line="37" type="float" variable="">
+            <type>float</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="42" namespace="cmfcmf\OpenWeatherMap\Util" package="Default">
+        <name>$lat</name>
+        <default></default>
+        <docblock line="42">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;The latitude of the city.&lt;/p&gt;" line="42" type="float" variable="">
+            <type>float</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="public" line="47" namespace="cmfcmf\OpenWeatherMap\Util" package="Default">
+        <name>$country</name>
+        <default></default>
+        <docblock line="47">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;The abbreviation of the country the city is located in.&lt;/p&gt;" line="47" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+    </class>
+    <source>eJylVNuK2zAQffdXzMM+bEJiv/e2XcJCA9020C19WVhkW3bUypKQ5JhQFvoR/cJ+SWck29246SZQEQiMzpw5c2bkV1dma5JsPk9gDh8NV18481tub5lZbt5tltebNfz68ROuFSAQmBHgNRhmHYcuQqFknkFldQNb782LLOu6Lj3kSrWtIcUaVOatFAVXSHC7vutDG8kZBhzngBnwfr26+fDpBiohOZTCeSvy1vMSOuG3iBAOnG5twaHQJYdKW6haS7WITCgMNMwLrcDymtlSqBqRZm9FvfXAVAlRAsbTQwU74YQPGiotpe4oUwr1zVHblrMSWK7biGgdqzkYjVyCu0BL4aE7XU0MhZyjMMoj1tBFIZlzaTCFen/Wv/NQWdB3Jnb0ZIrXiO3H2wy8xogScVmSKNZwZxjZ31T4uz+kvv/shXyZDFt1h54Uwu9js2iisdxx5ckEFm90/pUXPg3sEbXCcPI9ATyBhg5K3DGL4/V/OEWZ9pdZ+Ddtjv7DhShRwLFs2iUsTATUBk3J92THmQj1D65Kaha1SK1q4dvyDD6EnqbD5T2TjfnTjbI8t3wn4osYKHWrvN2P9IDbKHXB6JUJdbxYn/N3wRW+DI91QPFuMtEAGIXhh4M1YYI4oWNTHCC9+uD+s8MaEqJ55O7pgUxzznB9qmuw7//sHcnREW4Vk8dsr1pVBOqHh0IrFNAW/hLtW0R3FqHpRWhjMQqbBYb4gOhc0Odm+QZNfw2XWG0WXsjkNniM97HJWb/6ExA5jJjg3Sxu8xSBfj5B0IZOEIM7T2qNu0Wwx+Qx+Q2Argbe</source>
+  </file>
+  <file path="cmfcmf/OpenWeatherMap/AbstractCache.php" generated-path="cmfcmf.OpenWeatherMap.AbstractCache.html" hash="0a7b151c1e6717caeedb8fadab7dd8b2" package="Default">
+    <docblock line="0">
+      <description>OpenWeatherMap-PHP-API — An php api to parse weather data from http://www.OpenWeatherMap.org .</description>
+      <long-description></long-description>
+      <tag name="license" description="MIT&#10;Please see the LICENSE file distributed with this source code for further&#10;information regarding copyright and licensing.&#10;Please visit the following links to read about the usage policies and the license of OpenWeatherMap before using this class." line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+      <tag name="see" description="" line="0"/>
+    </docblock>
+    <class final="false" abstract="true" namespace="cmfcmf\OpenWeatherMap" line="22" package="Default">
+      <extends/>
+      <name>AbstractCache</name>
+      <full_name>\cmfcmf\OpenWeatherMap\AbstractCache</full_name>
+      <docblock line="22">
+        <description>Abstract cache class to be overwritten by custom cache implementations.</description>
+        <long-description></long-description>
+      </docblock>
+      <property static="false" visibility="protected" line="27" namespace="cmfcmf\OpenWeatherMap" package="Default">
+        <name>$seconds</name>
+        <default></default>
+        <docblock line="27">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" description="&lt;p&gt;Cache time in seconds.&lt;/p&gt;" line="27" type="int" variable="$seconds">
+            <type>int</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="true" static="false" visibility="public" namespace="cmfcmf\OpenWeatherMap" line="44" package="Default">
+        <name>isCached</name>
+        <full_name>\cmfcmf\OpenWeatherMap\AbstractCache::isCached()</full_name>
+        <docblock line="44">
+          <description>Checks whether a cached weather data is available.</description>
+          <long-description></long-description>
+          <tag name="param" description="&lt;p&gt;The type of the cached data. Can be either 'weather', 'hourlyForecast' or 'dailyForecast'.&lt;/p&gt;" line="44" type="string" variable="$type">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;The query parameters used.&lt;/p&gt;" line="44" type="array|int|string" variable="$query">
+            <type>array</type>
+            <type>int</type>
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;The units requested.&lt;/p&gt;" line="44" type="string" variable="$units">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;The language requested.&lt;/p&gt;" line="44" type="string" variable="$lang">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;The mode requested ('xml' or'json').&lt;/p&gt;&#10;" line="44" type="string" variable="$mode">
+            <type>string</type>
+          </tag>
+          <tag name="return" description="A \DateTime object containing the time when the weather information was last updated, false if no&#10;cached information is available." line="44" type="\DateTime|bool">
+            <type>\DateTime</type>
+            <type>bool</type>
+          </tag>
+          <tag name="note" description="This is not the time when the weather was cached, but the {@link Weather::$lastUpdate} value of the cached weather." line="44"/>
+          <tag name="note" description="You need to check here if a cached result is outdated. Return false in that case." line="44"/>
+        </docblock>
+        <argument line="0">
+          <name>$type</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$query</name>
+          <default></default>
+          <type>array|int|string</type>
+        </argument>
+        <argument line="0">
+          <name>$units</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$lang</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$mode</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="true" static="false" visibility="public" namespace="cmfcmf\OpenWeatherMap" line="57" package="Default">
+        <name>getCached</name>
+        <full_name>\cmfcmf\OpenWeatherMap\AbstractCache::getCached()</full_name>
+        <docblock line="57">
+          <description>Returns cached weather data.</description>
+          <long-description></long-description>
+          <tag name="param" description="&lt;p&gt;The type of the cached data. Can be either 'weather', 'hourlyForecast' or 'dailyForecast'.&lt;/p&gt;" line="57" type="string" variable="$type">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;The query parameters used.&lt;/p&gt;" line="57" type="array|int|string" variable="$query">
+            <type>array</type>
+            <type>int</type>
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;The units requested.&lt;/p&gt;" line="57" type="string" variable="$units">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;The language requested.&lt;/p&gt;" line="57" type="string" variable="$lang">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;The mode requested ('xml' or'json').&lt;/p&gt;&#10;" line="57" type="string" variable="$mode">
+            <type>string</type>
+          </tag>
+          <tag name="return" description="The cached data if it exists, false otherwise." line="57" type="string|bool">
+            <type>string</type>
+            <type>bool</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$type</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$query</name>
+          <default></default>
+          <type>array|int|string</type>
+        </argument>
+        <argument line="0">
+          <name>$units</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$lang</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$mode</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="true" static="false" visibility="public" namespace="cmfcmf\OpenWeatherMap" line="71" package="Default">
+        <name>setCached</name>
+        <full_name>\cmfcmf\OpenWeatherMap\AbstractCache::setCached()</full_name>
+        <docblock line="71">
+          <description>Saves cached weather data.</description>
+          <long-description></long-description>
+          <tag name="param" description="&lt;p&gt;The type of the cached data. Can be either 'weather', 'hourlyForecast' or 'dailyForecast'.&lt;/p&gt;" line="71" type="string" variable="$type">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;The weather data to cache.&lt;/p&gt;" line="71" type="string" variable="$content">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;The query parameters used.&lt;/p&gt;" line="71" type="array|int|string" variable="$query">
+            <type>array</type>
+            <type>int</type>
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;The units requested.&lt;/p&gt;" line="71" type="string" variable="$units">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;The language requested.&lt;/p&gt;" line="71" type="string" variable="$lang">
+            <type>string</type>
+          </tag>
+          <tag name="param" description="&lt;p&gt;The mode requested ('xml' or'json').&lt;/p&gt;&#10;" line="71" type="string" variable="$mode">
+            <type>string</type>
+          </tag>
+          <tag name="return" description="True on success, false on failure." line="71" type="bool">
+            <type>bool</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$type</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$content</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$query</name>
+          <default></default>
+          <type>array|int|string</type>
+        </argument>
+        <argument line="0">
+          <name>$units</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$lang</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0">
+          <name>$mode</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="cmfcmf\OpenWeatherMap" line="77" package="Default">
+        <name>setSeconds</name>
+        <full_name>\cmfcmf\OpenWeatherMap\AbstractCache::setSeconds()</full_name>
+        <docblock line="77">
+          <description>Set after how much seconds the cache shall expire.</description>
+          <long-description></long-description>
+          <tag name="param" description="" line="77" type="int" variable="$seconds">
+            <type>int</type>
+          </tag>
+        </docblock>
+        <argument line="0">
+          <name>$seconds</name>
+          <default></default>
+          <type>int</type>
+        </argument>
+      </method>
+    </class>
+    <source>eJztVttu20YQfedXzIMB2YZMvbu3GG6CGmhao3YQFMjLkByKmyx32b2IEWID+Yh+Yb+kM0tSNuXWTtGHFkgIwV6tztzPWe7X33VNl62OjzM4hp87Mq8JQ0PuJXYnlz9cnpxdXsAfH3+HMwMMBOwUBAsdOk/QD1CoMCDUzrbQhNCdrlZ93+dzX7l1a8g5hoR5plVJhh28vLgety41IW94ImAL+PHi/PlPV8+hVpqgUj44VcRAFfQqNIxQHryNriQobUVQWwd1dBJLnCnDGy0GZQ04WqOrlFkzsts6tW4CoKlgSIH383kGG+VVSDnUVmvbi6VW5p2Xsh1hBVjYOCCixzVBZ9mXIp/cyvZUna33GgoFcWJiJ15TFaVG7/PUFKn90f59GmqV8vtE7K4n+3jL2HG87eS361TFuFWWGWzJdyjtb2v+vJm7/iqbCHVW8OiwDFBiyZ1J1UojC+7OhlzvVAhkoNhCGX1gAg041XaaWjIhzTD1Z5XhzlfyMrk+F4vsQwb8pKjycDEbdEyEAAeeSmsqDwkIQbXs38C4m4/4VfrfORuoFJ5NVlzKnuPzhkpmQ99Q4j4OKVdzMfBkcYNKY6FpCrHLjMWDLQinmQUHYdsRXEtmsmDOCIVGn+Ir58SNNIxU8r8YAy2WsGhYA3r7gjlVog8LYBksKg57t5XvRUXncHvDfbmZ4v8WyW1TAsMq4SiQ88xTqvYdTGbRqOCT2bByxOY+/L2BRv6bDGQVRTlP2rQibjFJix0cDhfvWy3lLt56axZHD1rsKERn4M33GOiaJ35TWKvh7G4DbPGWhEuWSabMoMeRHTxak75NI71/nvTouQAfIHY8HaqWUKNmsasajJ3ij+O7b/coIwzTjutkDH/4yyO5SPzB/RKK8Rz68ExOKBgFeHp6IAm+SvndwgZ13OfV6CyfJ/CrjWCIf2aBlsJyYEyqbEdyRz7qIFnyGZPqz+GXoddjGyRbFL17mmtrJ986mnJsSZJkdZg0sBypuBy5tRwosxxYcPRQiENc/1f6+yK5/0xyg59Bb9fztgqT+N1K7/l97ifdWGlsr55my5rCv6LLFW7o/0+WKaqcS/z+S4FnbxbRpgT/vFk20MvJwcaUi2VJ/o5RchYpHd2TlPIPKDW2/Z+Ti/hWWXNvobE9tLFspgvGHV3AN6g1079T7sH47t9U5leSWPB9cpbz1QA7nPBHCTjcgOQ5kJvlybdTAt/cu8zIz7fZbfYntJngfw==</source>
+  </file>
+  <package name="Default" full_name="Default"/>
+  <namespace name="cmfcmf" full_name="cmfcmf">
+    <namespace name="OpenWeatherMap" full_name="cmfcmf\OpenWeatherMap">
+      <namespace name="Util" full_name="cmfcmf\OpenWeatherMap\Util"/>
+    </namespace>
+  </namespace>
+  <deprecated count="1"/>
+</project>
